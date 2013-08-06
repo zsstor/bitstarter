@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
   <meta charset="utf-8">
-  <title>Beer Moss</title>
+  <title>Beer Scanner</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -12,7 +12,98 @@
   <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
           rel="stylesheet" type="text/css">
-  <link type="text/css" rel="stylesheet" href="styles.css">
+    <style type="text/css">
+
+      /* Large desktop */
+      @media (min-width: 980px) { 
+        body {
+         padding-top: 60px;
+        }
+       .linediv-l {
+         border-right: 1px white solid;
+        }
+       .linediv-r {
+         border-left: 1px white solid;
+       }
+      }
+
+      /* Landscape phones and down */
+      @media (max-width: 480px) { 
+       .copy {
+         padding: 2.5% 10%;
+       }
+       .linediv-l {
+         border-bottom: 1px white solid;
+       }
+       .linediv-r {
+         border-top: 1px white solid;
+       }
+      }
+
+      /* All form factors */
+
+      /* Main body and headings */
+      body{
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      .heading, .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
+      }
+      p.lead {
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      /* Video pitch and Action */
+      .pitch {
+        padding: 2.5% 0%;
+      }
+      .order {
+        padding: 2% 0%;
+      }
+      .actions {
+        background-color: #343434;
+        padding: 3% 0%;
+      }
+      .video, .thermometer, .order, .social, .statistics {
+        text-align: center;
+      }
+      .statistics h3, .statistics p {
+        color: white;
+      }
+
+      /* Marketing Copy and Footer */
+      .copy {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: justify;
+      }
+      .asset {
+        padding: 2.5% 0%;
+      }
+      .footer {
+        color: #cccccc;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 11px;
+      }
+      .footer a {
+        color: #ccccff;
+      }   
+
+      /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+      div.addthis_toolbox {
+        width:180px;
+        margin: 0 auto;
+      }
+</style>
 </head>
 <body>
 
@@ -25,7 +116,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="brand" href="#">Beer Moss</a>
+        <a class="brand" href="#">Beer Scanner</a>
         <div class="nav-collapse collapse">
           <ul class="nav">
             <li class="active"><a href="#">Home</a></li>
@@ -40,7 +131,7 @@
   <div class="container">
     <div class="row-fluid heading">
       <div class="span12">
-        <h1>Beer Moss</h1>
+        <h1>Beer Scanner</h1>
       </div>
     </div>
     <div class="row-fluid subheading">
@@ -94,8 +185,15 @@
           </div>
           <div class="row-fluid">
             <div class="span8 offset2 social">
-              <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-              <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5200ff934c8404ac"></script>
+<!-- AddThis Button END -->
             </div>
           </div>
         </div>
@@ -111,7 +209,7 @@
           It's morning for Craft Beer in America. From Cigar City to Midnight Sun, from Maine Beer Company to AleSmith, awesome beer is becoming increasingly widespread.
         </p>
         <p>
-          Less awesome is the choice between picking at random from a menu of unfamiliar beer or just going with what you know. Beer Moss believes that this sucks. And we're working to fix it.
+          Less awesome is the choice between picking at random from a menu of unfamiliar beer or just going with what you know. Beer Scanner believes that this sucks. And we're working to fix it.
         </p>
       </div>
     </div>
@@ -125,7 +223,7 @@
           Simply take a photo of a beer menu, upload it to our servers, and we'll do the rest.
         </p>
         <p>
-          That is, we'll read in the beers, look up their styles and ratings, and send it back to you to choose. Now you'll know that it's Miller's faux-craft watermelon mango wheat. 
+          That is, we'll read in the beers, look up their styles and ratings, and send it back to you to choose. Now you'll know that it's Miller's faux-craft watermelon mango wheat. Bullet dodged (or ordered - we don't judge).
         <p>
       </div>
       <div class="span5 asset">
